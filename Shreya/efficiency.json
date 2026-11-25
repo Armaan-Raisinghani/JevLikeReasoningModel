@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "base_model": "Qwen/Qwen3-1.7B",
+    "adapter": "/scratch/shreya.khanna.ug24/jev_escalation/checkpoints/lora_adapter",
+    "device": "cuda",
+    "smoke_test": false,
+    "gate_threshold": 0.8200000000000001
+  },
+  "gate_calibration": {
+    "threshold": 0.8200000000000001,
+    "val_reasoning_acc": 0.7336578581363005,
+    "val_gated_acc": 0.7037552155771906,
+    "val_escalation_rate": 0.22322670375521558
+  },
+  "overall_test": {
+    "fast": {
+      "n": 2251,
+      "accuracy": 0.6783651710350955,
+      "ece": 0.23987964926985092,
+      "nll": 1.394111864267865,
+      "brier": 0.5367017646775051,
+      "avg_tokens": 0.0,
+      "avg_seconds": 0.031277649897108906,
+      "avg_forward_calls": 1.0
+    },
+    "reasoning": {
+      "n": 2251,
+      "accuracy": 0.7476677032430031,
+      "ece": 0.2311193391065077,
+      "nll": 2.4234587329994883,
+      "brier": 0.4739216726412574,
+      "avg_tokens": 256.0,
+      "avg_seconds": 6.996653201958385,
+      "avg_forward_calls": 2.0
+    },
+    "gated": {
+      "n": 2251,
+      "accuracy": 0.7156819191470457,
+      "ece": 0.25178370627759566,
+      "nll": 1.6594284824359573,
+      "brier": 0.5232928471652609,
+      "avg_tokens": 43.55752998667259,
+      "avg_seconds": 1.2136559388585808,
+      "avg_forward_calls": 1.1701466015104398,
+      "escalation_rate": 0.1701466015104398,
+      "reasoning_call_reduction": 0.8298533984895602
+    }
+  },
+  "per_task_table": [
+    {
+      "task": "sentiment",
+      "n": 497,
+      "fast_acc": 0.937625754527163,
+      "fast_ece": 0.05889410919826515,
+      "fast_brier": 0.11916494339829817,
+      "reason_acc": 0.9154929577464789,
+      "reason_ece": 0.08479806690868483,
+      "reason_brier": 0.16923204731377225,
+      "gated_acc": 0.937625754527163,
+      "escalation_rate": 0.006036217303822937,
+      "avg_tokens": 1.545271629778672,
+      "avg_seconds": 0.07296225339009368
+    },
+    {
+      "task": "inference",
+      "n": 500,
+      "fast_acc": 0.612,
+      "fast_ece": 0.32659177607297896,
+      "fast_brier": 0.6881843338029551,
+      "reason_acc": 0.678,
+      "reason_ece": 0.3218896534442901,
+      "reason_brier": 0.6438093668897484,
+      "gated_acc": 0.62,
+      "escalation_rate": 0.108,
+      "avg_tokens": 27.648,
+      "avg_seconds": 0.7842539880825207
+    },
+    {
+      "task": "science questions",
+      "n": 500,
+      "fast_acc": 0.824,
+      "fast_ece": 0.14196000194549563,
+      "fast_brier": 0.3185020772947305,
+      "reason_acc": 0.868,
+      "reason_ece": 0.12949751728773123,
+      "reason_brier": 0.25807830719929964,
+      "gated_acc": 0.842,
+      "escalation_rate": 0.076,
+      "avg_tokens": 19.456,
+      "avg_seconds": 0.5653272266006097
+    },
+    {
+      "task": "general knowledge",
+      "n": 500,
+      "fast_acc": 0.566,
+      "fast_ece": 0.34381881856918334,
+      "fast_brier": 0.758864188259513,
+      "reason_acc": 0.6,
+      "reason_ece": 0.3851673889160156,
+      "reason_brier": 0.7722690610058182,
+      "gated_acc": 0.57,
+      "escalation_rate": 0.192,
+      "avg_tokens": 49.152,
+      "avg_seconds": 1.3601113298125564
+    },
+    {
+      "task": "word math",
+      "n": 254,
+      "fast_acc": 0.23622047244094488,
+      "fast_ece": 0.4184278381739075,
+      "fast_brier": 1.0476984084311427,
+      "reason_acc": 0.610236220472441,
+      "reason_ece": 0.2402100497343409,
+      "reason_brier": 0.5732716143822543,
+      "gated_acc": 0.5078740157480315,
+      "escalation_rate": 0.7559055118110236,
+      "avg_tokens": 193.51181102362204,
+      "avg_seconds": 5.2788622290864
+    },
+    {
+      "task": "overall",
+      "n": 2251,
+      "fast_acc": 0.6783651710350955,
+      "fast_ece": 0.23987964926985092,
+      "fast_brier": 0.5367017646775051,
+      "reason_acc": 0.7476677032430031,
+      "reason_ece": 0.2311193391065077,
+      "reason_brier": 0.4739216726412574,
+      "gated_acc": 0.7156819191470457,
+      "escalation_rate": 0.1701466015104398,
+      "avg_tokens": 43.55752998667259,
+      "avg_seconds": 1.2136559388585808
+    }
+  ]
+}
