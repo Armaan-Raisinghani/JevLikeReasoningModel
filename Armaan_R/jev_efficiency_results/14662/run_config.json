@@ -1,0 +1,40 @@
+{
+  "script_version": "1.5",
+  "seed": 2026,
+  "smoke": true,
+  "models": {
+    "primary": "Qwen/Qwen3-1.7B",
+    "small": "Qwen/Qwen3-0.6B",
+    "teacher": "Qwen/Qwen3-4B"
+  },
+  "max_reason_tokens": 256,
+  "max_seq_len": 1024,
+  "epochs": 1,
+  "training_precision": "bf16",
+  "learning_rate": 5e-05,
+  "train_per_task": 20,
+  "val_per_task": 20,
+  "test_per_task": 20,
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05
+  },
+  "gate_escalation_cost": 0.02,
+  "hf_hub_disable_xet": "1",
+  "hf_hub_download_timeout": "120",
+  "teacher_model_requested": "Qwen/Qwen3-1.7B",
+  "teacher_model_used": "Qwen/Qwen3-1.7B",
+  "selected_variants": [
+    "top25_finetune"
+  ],
+  "letter_token_ids": {
+    "A": 362,
+    "B": 425,
+    "C": 356,
+    "D": 422,
+    "E": 468
+  },
+  "device": "cuda",
+  "hf_home": "/scratch/armaan.r.ug24/jev-efficiency-14610/hf"
+}

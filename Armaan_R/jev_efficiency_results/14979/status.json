@@ -1,0 +1,11 @@
+{
+  "job_id": 14979,
+  "slurm_state": "FAILED",
+  "exit_code": "1:0",
+  "elapsed": "01:27:25",
+  "completed_and_evaluated": ["frozen_1_7b", "frozen_0_6b", "lora_all", "lora_attention", "lora_mlp"],
+  "trained_but_evaluated_as_base_model": ["top25_finetune"],
+  "not_completed": ["pruned25_lora"],
+  "failure": "ValueError: Unsupported training recipe: pruned25_lora",
+  "partial_metrics_reconstructed_from_saved_predictions": true
+}
