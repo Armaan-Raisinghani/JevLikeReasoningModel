@@ -1,0 +1,104 @@
+{
+  "sentiment": {
+    "n": 250,
+    "fast": {
+      "accuracy": 0.932,
+      "ece": 0.04201360571253963,
+      "nll": 0.2149521712605528,
+      "brier": 0.11321335524455019
+    },
+    "reasoning": {
+      "accuracy": 0.944,
+      "ece": 0.047179205982988526,
+      "nll": 0.22356617094511536,
+      "brier": 0.10903074741651397
+    },
+    "confident_wrong_fast_share": 0.028985507246376812,
+    "confident_fast_count": 69
+  },
+  "inference": {
+    "n": 250,
+    "fast": {
+      "accuracy": 0.556,
+      "ece": 0.16764319213737117,
+      "nll": 1.0008617155393695,
+      "brier": 0.6014125324784667
+    },
+    "reasoning": {
+      "accuracy": 0.68,
+      "ece": 0.0871909610045461,
+      "nll": 0.8633565318362829,
+      "brier": 0.49484329323405946
+    },
+    "confident_wrong_fast_share": null,
+    "confident_fast_count": 0
+  },
+  "science questions": {
+    "n": 250,
+    "fast": {
+      "accuracy": 0.832,
+      "ece": 0.08713013987381196,
+      "nll": 0.5124302001878793,
+      "brier": 0.2504859772642159
+    },
+    "reasoning": {
+      "accuracy": 0.872,
+      "ece": 0.13042029128854354,
+      "nll": 0.5436172804840548,
+      "brier": 0.2446224246797724
+    },
+    "confident_wrong_fast_share": null,
+    "confident_fast_count": 0
+  },
+  "general knowledge": {
+    "n": 250,
+    "fast": {
+      "accuracy": 0.564,
+      "ece": 0.09673538653180569,
+      "nll": 1.0776872890137514,
+      "brier": 0.5728574664754633
+    },
+    "reasoning": {
+      "accuracy": 0.596,
+      "ece": 0.13085158062051983,
+      "nll": 1.1444666237595864,
+      "brier": 0.6067502452696675
+    },
+    "confident_wrong_fast_share": null,
+    "confident_fast_count": 0
+  },
+  "word math": {
+    "n": 250,
+    "fast": {
+      "accuracy": 0.256,
+      "ece": 0.12773678017249143,
+      "nll": 1.6631098350892985,
+      "brier": 0.8193459599258189
+    },
+    "reasoning": {
+      "accuracy": 0.608,
+      "ece": 0.1819228145558337,
+      "nll": 1.0344519150326974,
+      "brier": 0.4892439557375074
+    },
+    "confident_wrong_fast_share": null,
+    "confident_fast_count": 0
+  },
+  "overall": {
+    "n": 1250,
+    "fast": {
+      "accuracy": 0.628,
+      "ece": 0.08297746228612987,
+      "nll": 0.8938082422181702,
+      "brier": 0.471463058277703
+    },
+    "reasoning": {
+      "accuracy": 0.74,
+      "ece": 0.05578588399006475,
+      "nll": 0.7618917044115473,
+      "brier": 0.38889813326750416
+    },
+    "confident_wrong_fast_share": 0.028985507246376812,
+    "confident_fast_count": 69
+  }
+}

@@ -1,0 +1,3 @@
+Python: 3.11.18 (main, Oct 26 2026, 11:35:17) [GCC 15.3.0]
+PyTorch: 2.11.0+cu128
+CUDA build: 12.8

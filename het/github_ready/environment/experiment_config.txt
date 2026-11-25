@@ -1,0 +1,29 @@
+Base model: Qwen/Qwen3-1.7B
+Teacher model: Qwen/Qwen3-4B
+Fallback model: Qwen/Qwen3-0.6B
+
+Training split: 500 examples per task in the original data
+Seen tasks: 4
+Held-out task: Word Math
+Actual original training set: 2,000 examples
+Validation: 150 per task (750 total)
+Test: 250 per task (1,250 total)
+
+Accepted teacher traces: 345
+Original training epochs: 2
+
+LoRA rank: 16
+LoRA alpha: 32
+LoRA dropout: 0.05
+Learning rate: 2e-4
+Batch size: 1
+Gradient accumulation: 8
+Maximum sequence length: 1024
+Maximum teacher reasoning tokens: 256
+Seed: 2026
+
+Brier experiment:
+Fresh LoRA adapter
+Brier coefficient: 1.0
+Training epochs: 1
+Original experiment artifacts are retained separately.
