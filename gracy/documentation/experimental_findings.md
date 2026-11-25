@@ -33,3 +33,17 @@ Running the identical LOTO protocol on `stage0` predictions (base `Qwen/Qwen3-1.
 - Untuned fast/reasoning test accuracies are lower (`0.5552 / 0.6752` overall vs `0.6280 / 0.7400` after LoRA).
 - Rescue-prediction ROC-AUC on excluded tasks drops sharply on `stage0`: Sentiment `0.3510` (vs `0.8724` in `stage0` Config A), Inference `0.4512` (vs `0.5727`), Science `0.6041` (vs `0.7206`), General Knowledge `0.6482` (vs `0.5101`).
 - Thus, LoRA fine-tuning with `ReadoutTrainer` substantially improves hidden-state separability for rescue prediction across seen tasks, **and** even with LoRA tuning, the 2,052-dim linear gate still fails to generalise zero-shot to AQuA-RAT.
+
+---
+
+## 4. Confidently Wrong Fast Predictions (`max(calibrated_fast_probs) ≥ 0.95`)
+
+From `results/threshold_eval_detailed.csv` (`learned_gate_val_tau` and `confidence_gate_val_tau`):
+- Under temperature scaling fitted on `val_temp` (`T_fast = 3.260–3.773`), **zero** test queries in `inference`, `science questions`, `general knowledge`, or `word math` reach calibrated fast confidence `≥ 0.95` (`confident_fast_count = 0`).
+- Only **`sentiment` (`n = 250`)** produces `≥ 0.95` calibrated fast predictions:
+  - **Config A (`T_fast = 3.531`)**: `2 / 72` confidently wrong (`2.78%` share of confident predictions; `0.80%` of all 250 queries), `0.0%` caught (`0 / 2` escalated at `τ*`).
+  - **Config B (`T_fast = 3.773`)**: `0 / 48` confidently wrong (`0.00%` share; `0.00%` overall).
+  - **Config C (`T_fast = 3.260`)**: `3 / 111` confidently wrong (`2.70%` share; `1.20%` overall), `0.0%` caught (`0 / 3` escalated at `τ*`).
+  - **Config D (`T_fast = 3.516`)**: `2 / 74` confidently wrong (`2.70%` share; `0.80%` overall), `0.0%` caught (`0 / 2` escalated at `τ*`).
+  - **Config E (`T_fast = 3.580`)**: `2 / 69` confidently wrong (`2.90%` share; `0.80%` overall), `0.0%` caught (`0 / 2` escalated at `τ*`).
+- Across `overall_all_5` (`n = 1,250`), confidently wrong fast predictions therefore account for `0.00%–0.24%` (`0–3 / 1,250`) of all queries and `0.00%–2.90%` of `≥ 0.95`-confident queries, remaining unescalated at the chosen operating thresholds.

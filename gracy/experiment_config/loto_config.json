@@ -58,12 +58,21 @@
     "val_temp_frac": 0.20,
     "val_gate_train_frac": 0.50,
     "val_thresh_frac": 0.30,
+    "deduplicate_by_id": true,
     "per_task_counts": {
       "val_temp": 30,
       "val_gate_train": 75,
       "val_thresh": 45,
       "total_val_per_task": 150
     },
+    "actual_unique_val_counts": {
+      "sentiment": {"val_temp": 30, "val_gate_train": 75, "val_thresh": 45, "total_unique": 150},
+      "inference": {"val_temp": 30, "val_gate_train": 75, "val_thresh": 45, "total_unique": 150},
+      "science questions": {"val_temp": 30, "val_gate_train": 75, "val_thresh": 45, "total_unique": 150},
+      "general knowledge": {"val_temp": 30, "val_gate_train": 74, "val_thresh": 45, "total_unique": 149},
+      "word math": {"val_temp": 0, "val_gate_train": 0, "val_thresh": 0, "total_unique": 150, "excluded_from_validation_tuning": true}
+    },
+    "deduplication_note": "One exact duplicate SHA-256 content ID (82b95ba4edfb) in general knowledge validation is removed prior to partitioning, yielding 149 unique rows (30/74/45) instead of 150 (30/75/45) so zero IDs repeat across splits.",
     "stratify_by_raw_rescue": true
   },
   "gate": {

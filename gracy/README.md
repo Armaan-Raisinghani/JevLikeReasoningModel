@@ -47,7 +47,7 @@ All five tasks follow the canonical splits generated in `Gitanjali/JevLikeReason
 | `word math` | `deepmind/aqua_rat` (`raw`) | **Held-out** | 5 | 0 | 0 | 150 | **0** (strictly excluded) | 250 |
 | **Total** | — | — | 2–5 | **2,000** | **345** | **750** | **599** (Config A) / **449–450** (B–E) | **1,250** |
 
-\* **Data hygiene note**: Verification (`scripts/verify_inputs.py`) detected one exact duplicate SHA-256 content ID (`82b95ba4edfb`) appearing twice in `general knowledge` validation (`stage2_val.json` and `stage0_val.json`). Deduplicating by `id` before partitioning guarantees zero cross-partition overlap across all random seeds (`val_temp`, `val_gate_train`, `val_thresh`, and `test` have `0` shared IDs).
+\* **Data hygiene & nominal vs. post-deduplication split counts**: `experiment_config/loto_config.json` specifies nominal per-task validation allocations of `30` (`val_temp`) / `75` (`val_gate_train`) / `45` (`val_thresh`) = `150`. Verification (`scripts/verify_inputs.py`) detected one exact duplicate SHA-256 content ID (`82b95ba4edfb`) appearing twice in `general knowledge` validation (`stage2_val.json` and `stage0_val.json`). Deduplicating by `id` removes that 1 duplicate prior to splitting, preserving `30` (`val_temp`) and `45` (`val_thresh`) while leaving `74` unique examples in `general knowledge`'s `val_gate_train` (`149` unique total). Consequently, Config A trains its gate on `299` (`75×3 + 74`) examples, Configs B–D on `224` (`75×2 + 74`), and Config E (which excludes `general knowledge`) on `225` (`75×3`), with zero ID overlap across `val_temp`, `val_gate_train`, `val_thresh`, and `test` across all seeds.
 
 ---
 
@@ -178,6 +178,7 @@ python3.11 -m venv .venv
 ![Excluded Task Comparison](plots/loto_excluded_task_comparison.png)
 ![Matched Escalation Curves](plots/matched_escalation_overall_and_tasks.png)
 ![Word Math Generalisation](plots/word_math_generalisation.png)
+![Pareto Accuracy vs Token Cost](plots/pareto_accuracy_vs_tokens.png)
 ![Rescue ROC-AUC Heatmap](plots/rescue_roc_auc_heatmap.png)
 
 *(See [`documentation/experimental_findings.md`](documentation/experimental_findings.md) for full analysis, 5-seed variance results, confidently-wrong rates, and Stage 0 untuned control results.)*

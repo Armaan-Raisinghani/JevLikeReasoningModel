@@ -192,6 +192,45 @@ def calibrate(rows: list[dict[str, Any]], temps: dict[str, float]) -> list[dict[
     return out
 
 
+def select_threshold_gap_sanity(
+    rows: list[dict[str, Any]], scores: np.ndarray, target_gap: float = 0.03, grid_points: int = 101
+) -> float:
+    """Constrained accuracy-gap threshold selection matching run_loto_experiment.py."""
+    reason_acc = float(np.mean([int(np.argmax(r["reasoning"]["calibrated_probs"]) == r["label"]) for r in rows]))
+    candidates = []
+    for tau in np.linspace(0.0, 1.0, grid_points):
+        esc = scores >= tau
+        acc = float(
+            np.mean([
+                int(np.argmax((r["reasoning"] if e else r["fast"])["calibrated_probs"]) == r["label"])
+                for r, e in zip(rows, esc)
+            ])
+        )
+        candidates.append((float(np.mean(esc)), -acc, float(tau), acc))
+    eligible = [c for c in candidates if c[3] >= reason_acc - target_gap]
+    chosen = min(eligible or candidates, key=lambda x: (x[0], x[1]))
+    return float(chosen[2])
+
+
+def select_threshold_utility_sanity(
+    rows: list[dict[str, Any]], scores: np.ndarray, cost: float = 0.02, grid_points: int = 101
+) -> float:
+    """Legacy utility-based threshold diagnostic (accuracy - cost * escalation_rate)."""
+    best_u, best_tau = -1e9, 1.0
+    for tau in np.linspace(0.0, 1.0, grid_points):
+        esc = scores >= tau
+        acc = float(
+            np.mean([
+                int(np.argmax((r["reasoning"] if e else r["fast"])["calibrated_probs"]) == r["label"])
+                for r, e in zip(rows, esc)
+            ])
+        )
+        u = acc - cost * float(np.mean(esc))
+        if u > best_u:
+            best_u, best_tau = u, float(tau)
+    return best_tau
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--cache-dir", default=None)
@@ -219,7 +258,11 @@ def main() -> None:
     parity = verify_learned_gate_parity(repo_root, s2_val)
     print(f"[Verify] Original learned_gate.json parity: {json.dumps(parity, indent=2)}")
 
-    # Verify all 5 configs' partitions + run sanity test on A and B (val_thresh only, no test peeking)
+    target_gap = config["threshold_selection"]["target_accuracy_gap"]
+    grid_points = config["threshold_selection"]["candidate_grid_points"]
+    esc_cost = config["threshold_selection"]["escalation_cost"]
+
+    # Verify all 5 configs' partitions + threshold selection on val_thresh ONLY (no test peeking)
     for cfg_id, cfg in config["configurations"].items():
         vt, vg, vth = partition_eligible_val(s2_val, cfg["train_tasks"], config["seed"], config)
         temps = {m: fit_temperature(vt, m) for m in ("fast", "reasoning")}
@@ -240,30 +283,15 @@ def main() -> None:
         scores_th = gate.predict_proba(X_th)[:, 1]
         conf_scores_th = np.array([1.0 - max(r["fast"]["calibrated_probs"]) for r in vth_cal])
 
-        # Inspect utility-based vs accuracy-gap threshold selection on val_thresh ONLY
-        best_u, best_tau_u = -1e9, 1.0
-        for tau in np.linspace(0.0, 1.0, 101):
-            preds = [r["reasoning"]["calibrated_probs"] if s >= tau else r["fast"]["calibrated_probs"] for r, s in zip(vth_cal, scores_th)]
-            acc = float(np.mean([int(np.argmax(p) == r["label"]) for p, r in zip(preds, vth_cal)]))
-            esc = float(np.mean(scores_th >= tau))
-            u = acc - 0.02 * esc
-            if u > best_u:
-                best_u, best_tau_u = u, float(tau)
-
-        # Confidence gate utility threshold on val_thresh
-        best_cu, best_ctau_u = -1e9, 1.0
-        for tau in np.linspace(0.0, 1.0, 101):
-            preds = [r["reasoning"]["calibrated_probs"] if s >= tau else r["fast"]["calibrated_probs"] for r, s in zip(vth_cal, conf_scores_th)]
-            acc = float(np.mean([int(np.argmax(p) == r["label"]) for p, r in zip(preds, vth_cal)]))
-            esc = float(np.mean(conf_scores_th >= tau))
-            u = acc - 0.02 * esc
-            if u > best_cu:
-                best_cu, best_ctau_u = u, float(tau)
+        tau_gap = select_threshold_gap_sanity(vth_cal, scores_th, target_gap=target_gap, grid_points=grid_points)
+        ctau_gap = select_threshold_gap_sanity(vth_cal, conf_scores_th, target_gap=target_gap, grid_points=grid_points)
+        tau_util = select_threshold_utility_sanity(vth_cal, scores_th, cost=esc_cost, grid_points=grid_points)
 
         print(
             f"[Sanity] {cfg_id}: n_temp={len(vt)}, n_gate={len(vg)} (rescues={y_tr.sum()}), "
             f"n_thresh={len(vth)} (rescues={y_th.sum()}), T_fast={temps['fast']:.3f}, T_reas={temps['reasoning']:.3f}, "
-            f"learned_tau*={best_tau_u:.2f}, conf_tau*={best_ctau_u:.2f}"
+            f"learned_tau*(gap={target_gap})={tau_gap:.2f}, conf_tau*(gap={target_gap})={ctau_gap:.2f}, "
+            f"legacy_utility_tau*(cost={esc_cost})={tau_util:.2f}"
         )
 
 
