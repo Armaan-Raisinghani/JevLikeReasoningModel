@@ -1,0 +1,26 @@
+{
+  "sentiment": {
+    "within_1_point_rate": 0.008,
+    "within_3_point_rate": 0.0
+  },
+  "inference": {
+    "within_1_point_rate": 0.648,
+    "within_3_point_rate": 0.56
+  },
+  "science questions": {
+    "within_1_point_rate": 0.16,
+    "within_3_point_rate": 0.04
+  },
+  "general knowledge": {
+    "within_1_point_rate": 0.152,
+    "within_3_point_rate": 0.032
+  },
+  "word math": {
+    "within_1_point_rate": 0.96,
+    "within_3_point_rate": 0.912
+  },
+  "overall": {
+    "within_1_point_rate": 0.5,
+    "within_3_point_rate": 0.3296
+  }
+}

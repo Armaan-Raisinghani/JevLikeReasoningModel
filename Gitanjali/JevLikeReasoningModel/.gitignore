@@ -1,0 +1,31 @@
+﻿# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Local Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Machine-specific and temporary logs/files
+*.out
+*.err
+*.log
+*.tmp
+
+# Generated training and model artifacts
+**/checkpoints/
+**/trainer/
+**/lora_adapter/
+**/adapters/
+*.safetensors
+pytorch_model*.bin
+*.pt
+*.pth
+*.gguf
+
+# Large generated inference dumps; other JSON files remain trackable
+**/predictions/*.json

@@ -1,0 +1,22 @@
+﻿# Version reported by the executed experiment: torch 2.11.0+cu128.
+# Install from the matching PyTorch CUDA wheel index if this wheel is unavailable
+# from the default package index; use the PyTorch selector for your platform.
+torch==2.11.0+cu128
+
+# Fitted gate artifact metadata records scikit-learn 1.9.1.
+scikit-learn==1.9.1
+
+# Exact versions were not recorded in the executed notebook environment.
+numpy
+pandas
+matplotlib
+scipy
+datasets
+transformers
+peft
+accelerate
+huggingface_hub
+
+# Needed to open and execute the notebook; exact versions were not recorded.
+jupyter
+ipykernel
