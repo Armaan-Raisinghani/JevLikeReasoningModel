@@ -1,0 +1,91 @@
+{
+  "experiment_name": "jev_loto_gate_generalisation",
+  "source_implementation": "Gitanjali/JevLikeReasoningModel",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "seed": 2026,
+  "robustness_seeds": [2026, 2027, 2028, 2029, 2030],
+  "tasks": {
+    "seen": [
+      "sentiment",
+      "inference",
+      "science questions",
+      "general knowledge"
+    ],
+    "held_out": [
+      "word math"
+    ],
+    "all": [
+      "sentiment",
+      "inference",
+      "science questions",
+      "general knowledge",
+      "word math"
+    ]
+  },
+  "configurations": {
+    "A_all_seen": {
+      "label": "Config A (All 4 Seen Tasks)",
+      "train_tasks": ["sentiment", "inference", "science questions", "general knowledge"],
+      "excluded_seen_task": null,
+      "held_out_task": "word math"
+    },
+    "B_excl_sentiment": {
+      "label": "Config B (Exclude Sentiment)",
+      "train_tasks": ["inference", "science questions", "general knowledge"],
+      "excluded_seen_task": "sentiment",
+      "held_out_task": "word math"
+    },
+    "C_excl_inference": {
+      "label": "Config C (Exclude Inference)",
+      "train_tasks": ["sentiment", "science questions", "general knowledge"],
+      "excluded_seen_task": "inference",
+      "held_out_task": "word math"
+    },
+    "D_excl_science": {
+      "label": "Config D (Exclude Science Questions)",
+      "train_tasks": ["sentiment", "inference", "general knowledge"],
+      "excluded_seen_task": "science questions",
+      "held_out_task": "word math"
+    },
+    "E_excl_general_knowledge": {
+      "label": "Config E (Exclude General Knowledge)",
+      "train_tasks": ["sentiment", "inference", "science questions"],
+      "excluded_seen_task": "general knowledge",
+      "held_out_task": "word math"
+    }
+  },
+  "validation_partitions": {
+    "val_temp_frac": 0.20,
+    "val_gate_train_frac": 0.50,
+    "val_thresh_frac": 0.30,
+    "per_task_counts": {
+      "val_temp": 30,
+      "val_gate_train": 75,
+      "val_thresh": 45,
+      "total_val_per_task": 150
+    },
+    "stratify_by_raw_rescue": true
+  },
+  "gate": {
+    "scaler": "StandardScaler",
+    "classifier": "LogisticRegression",
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "random_state": 2026,
+    "n_features": 2052,
+    "feature_source": "raw_fast_probs_and_hidden"
+  },
+  "threshold_selection": {
+    "primary_criterion": "target_accuracy_gap",
+    "target_accuracy_gap": 0.03,
+    "escalation_cost": 0.02,
+    "secondary_escalation_cost": 0.10,
+    "candidate_grid_points": 101
+  },
+  "matched_escalation_rates": [0.10, 0.20, 0.30, 0.40],
+  "confident_wrong_threshold": 0.95,
+  "default_cache_dir_candidates": [
+    "../../../Downloads/jev result/nanbugfix_medium",
+    "/Users/gracytanna/Downloads/jev result/nanbugfix_medium"
+  ]
+}

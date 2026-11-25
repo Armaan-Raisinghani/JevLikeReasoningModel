@@ -1,0 +1,14 @@
+[Verify] Using cache directory: /Users/gracytanna/Downloads/jev result/nanbugfix_medium
+[Verify] Prediction integrity passed: val=750, test=1250, overlap=0
+[Verify] Original learned_gate.json parity: {
+  "n_train": 450,
+  "n_holdout": 150,
+  "max_scaler_mean_abs_diff": 0.0,
+  "max_logreg_coef_abs_diff": 6.527317641124436e-06,
+  "reproduced_holdout_acc": 0.8866666666666667
+}
+[Sanity] A_all_seen: n_temp=120, n_gate=299 (rescues=33), n_thresh=180 (rescues=19), T_fast=3.531, T_reas=5.683, learned_tau*=0.00, conf_tau*=0.26
+[Sanity] B_excl_sentiment: n_temp=90, n_gate=224 (rescues=31), n_thresh=135 (rescues=18), T_fast=3.773, T_reas=5.872, learned_tau*=0.00, conf_tau*=0.30
+[Sanity] C_excl_inference: n_temp=90, n_gate=224 (rescues=17), n_thresh=135 (rescues=10), T_fast=3.260, T_reas=5.242, learned_tau*=0.00, conf_tau*=0.24
+[Sanity] D_excl_science: n_temp=90, n_gate=224 (rescues=26), n_thresh=135 (rescues=15), T_fast=3.516, T_reas=5.592, learned_tau*=0.00, conf_tau*=0.29
+[Sanity] E_excl_general_knowledge: n_temp=90, n_gate=225 (rescues=25), n_thresh=135 (rescues=14), T_fast=3.580, T_reas=6.041, learned_tau*=0.00, conf_tau*=0.27
