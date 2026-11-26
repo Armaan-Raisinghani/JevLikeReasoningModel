@@ -1,0 +1,5712 @@
+{
+  "A_all_seen": {
+    "overall_all_5": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6464,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.32922143058776854
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.6608,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6337249494552613
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.664,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.9405000045776367
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.6752,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2416001092910767
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.6848,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.5420349742889403
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.6992,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.848143169593811
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.7104,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.1538991872787476
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.7168,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4544661542892454
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7192,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.755735562324524
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.728,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.062248461341858
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.7344,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.368486869430542
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.7344,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6700987276077273
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.736,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.9709459175109862
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.7368,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.277470054244995
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7352,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.583370140266418
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.736,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.883924576950073
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7376,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.185849905395508
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.7384,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.492198217964172
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.799268525505066
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6456,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.3282960319519043
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.6584,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6334305128097534
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.6728,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.9389971534729004
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.692,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2393655250549316
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.7,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.5398862096786499
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.7088,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8470920059204101
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.7176,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.1523672555923463
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.7216,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4541457397460937
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7248,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.7558347930908202
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.7312,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0625483417510986
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.736,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.3681653043746946
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.7384,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.669659893608093
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.970338419532776
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.276792581367492
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.584106272315979
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.887102208328247
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.1887202602386475
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.494378026771545
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.800848583221436
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ]
+    },
+    "word math": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.28,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.31807804489135744
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.3,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6321015319824219
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.316,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9459403142929077
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.332,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.235402696609497
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.34,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5252109375
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.336,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8393007545471192
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.352,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.1532296562194824
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.372,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4441084213256836
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.396,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.733546438217163
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.416,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0472862625122072
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.444,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.360678800582886
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.46,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6503607053756713
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.48,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.940514081954956
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.504,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.2555661249160766
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.524,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.569535645484924
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.54,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.859775286674499
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.556,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.172847327232361
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.56,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.463697591781616
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.584,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.777231145858765
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.26,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.31803265380859375
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.288,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6322264862060547
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.3,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.94568128490448
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.32,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.235899510383606
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.348,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5256378602981568
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.352,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8396082649230956
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.368,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.153799566268921
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.388,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4434620103836058
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.4,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.732802460670471
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.408,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0475006523132326
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.424,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.361160608291626
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.444,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.651063542366028
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.468,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.941188856124878
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.488,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.254613095283508
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.52,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.568581114768982
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.536,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.858365205764771
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.56,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.172686319351197
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.462963708877563
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.77732637500763
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ]
+    },
+    "seen_tasks_all_4": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.737,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.33209810304641724
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.744,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6360265004634857
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.75,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9410253984928131
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.753,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2463723318576814
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.757,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.5496887707710265
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.76,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.853691857099533
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.759,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.1578349299430846
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.766,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.462199511051178
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.7664219455718992
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.769,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0707166888713835
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.374108088970184
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.77,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.678109780550003
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.9819731945991514
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.284905717611313
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.588183519363404
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.893211766719818
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.196898767471313
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.500315881490708
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.804926380395889
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.729,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.33467538571357724
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.733,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6376993062496186
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.737,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9433035323619843
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.747,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2462491569519043
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.75,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.5507097430229186
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.751,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8548904693126678
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.758,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.1595831995010375
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.463631162881851
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.7659989244937897
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0703526651859283
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.373651072263718
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.677014374256134
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.9814406397342683
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.286904200553894
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.5921555585861205
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.774,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.896488724470139
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.199892096996307
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.503560663461685
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.806946388244629
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ]
+    }
+  },
+  "B_excl_sentiment": {
+    "overall_all_5": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6432,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.3289150602340698
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.656,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6338953996658325
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.6664,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.9394223230361939
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.6704,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2414298742294312
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.6832,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.5425667428970338
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.7,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8480108821868897
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.7064,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.1532535552978516
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.7144,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4552783428192138
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7208,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.75649896068573
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.7256,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.062074099159241
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.7296,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.367848702430725
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.7312,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6692048377990725
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.7344,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.969965668296814
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.7344,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.27595936088562
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7352,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.582001562881469
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.7352,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.8844624563217165
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7376,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.184982313919067
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.7384,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.492563251876831
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.798368331336975
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6456,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.3282960319519043
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.6584,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6329929641723633
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.6728,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.9389557863235474
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.6912,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.239458495903015
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.7,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.5399161127090455
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.7088,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8470520961761474
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.716,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.1524496299743654
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.7216,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4541457397460937
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7248,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.7558289522171022
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.7312,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0624649473190306
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.736,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.368041033744812
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.7384,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6697210443496706
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.9703512271881105
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.276762300872803
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.584370324516296
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.8870015699386595
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.18867702293396
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.494378026771545
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.800848583221436
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ]
+    },
+    "word math": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.276,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.31792685317993163
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.3,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6318765478134155
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.316,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9456696767807007
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.332,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.235147096633911
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.336,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5244319868087768
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.34,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.838997582435608
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.352,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.153141531944275
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.384,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4431012382507324
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.404,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.7334023418426514
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.432,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0474567708969116
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.456,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.3610008888244627
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.484,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.650106685638428
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.492,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.939564034461975
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.504,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.254779275894165
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.52,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.568982187271118
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.532,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.858643352508545
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.544,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.172808292388916
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.564,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.463582898139953
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.592,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.77711395740509
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.26,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.31803265380859375
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.288,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6322264862060547
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.3,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.94568128490448
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.316,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2359717321395873
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.348,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5256378602981568
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.352,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8397390909194946
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.372,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.153673173904419
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.388,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.44349710559845
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.4,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.732802460670471
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.408,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0475006523132326
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.42,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.361327869415283
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.448,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6512846879959104
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.468,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.941188856124878
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.488,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.254613095283508
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.52,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.568581114768982
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.536,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.858365205764771
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.56,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.172686319351197
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.576,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.462899532318115
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.77732637500763
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ]
+    },
+    "seen_tasks_all_4": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.734,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.3317875125408173
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.745,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6353971400260925
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.748,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9407997033596038
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.751,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.245347767353058
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.754,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.5492583377361298
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.758,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.854665055513382
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.761,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.1583173835277556
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.762,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.461920846939087
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.761,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.7656834087371824
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.764,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.069710871696472
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.3727882075309754
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.766,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6768124952316286
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.9801524147987366
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.283663537025451
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.588855868577957
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.769,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.892093563079834
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.1958042781352995
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.501263280153275
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.805040917158127
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.729,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.3346451053619385
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.733,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6377907371520997
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.735,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9437293057441711
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.746,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2463080587387085
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.75,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.550721873998642
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.751,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.854900499343872
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.758,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.1596104221343992
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.766,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.463559352636337
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.769,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.765988096952438
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0704291036129
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.3737194259166716
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6769346594810486
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.981953262090683
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.286938448429107
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.592029760599137
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.774,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.8964153730869295
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.774,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.199762495040893
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.503560663461685
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.806946388244629
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ]
+    },
+    "excluded_seen_task": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.932,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.027803213119506835
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.936,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.31744768142700197
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6324949617385864
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9468751392364502
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2379516382217408
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5291353874206544
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8445346908569336
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.1588665466308594
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4492959156036376
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.7394940395355225
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0548280696868897
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.369121962547302
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.659760757446289
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.9504363498687742
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.267152879714966
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.586085373878479
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.8770900707244875
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.94,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.192259082794189
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.482521389961243
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.798039583206177
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.088597231864929
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.932,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.027803213119506835
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.3184807710647583
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.952,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6328315544128418
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.952,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9471239347457886
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.952,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2368762521743775
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.948,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5278176889419555
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.948,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8427382287979126
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.948,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.1579262647628785
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.948,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4482721967697145
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.7386199417114256
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0541479377746583
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.3720911474227906
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6633892650604247
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.9566228370666505
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.2716018562316895
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.586500720024109
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.876932164192199
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.191339629173279
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.483193127632141
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.7978248462677
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.944,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.088597231864929
+        }
+      ]
+    }
+  },
+  "C_excl_inference": {
+    "overall_all_5": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6424,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.3300038087844849
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.6568,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6361108259201049
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.6632,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.94135205078125
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.6744,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2416513469696044
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.688,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.542647124862671
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.7008,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.848425620651245
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.708,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.154509500694275
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.7152,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4551555810928343
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7184,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.7562082290649412
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.724,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0621784757614137
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.7304,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.367152505302429
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.732,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.668436516571045
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.7352,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.970391004562378
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.7376,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.277408373451233
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7352,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.583039377593994
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.7344,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.88310918636322
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7368,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.184418120765686
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.7384,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.491475881958007
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.79983166255951
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6456,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.3283102430343628
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.6592,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6334327487945557
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.672,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.939004084777832
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.6896,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.239457758331299
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.6992,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.539872335243225
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.7056,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8471768934249877
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.7168,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.1523055253982544
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.7224,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.454780884552002
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7248,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.7558347930908202
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.7336,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.062561555480957
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.7368,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.3682104036331175
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.669374073600769
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.9704543821334837
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.276903155899048
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.5841370227813725
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.886391497611999
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.188781445121765
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.494316104125977
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.800848583221436
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ]
+    },
+    "word math": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.268,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.3183885974884033
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.284,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6327014942169189
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.308,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9466376438140869
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.32,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2366285648345947
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.34,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5266096706390382
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.356,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.840027087211609
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.364,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.1540592727661134
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.368,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.443515622138977
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.376,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.7327957983016966
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.388,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.046735935211182
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.408,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.360657828330994
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.428,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6513040142059325
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.468,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.9414590311050417
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.492,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.254900812149048
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.5,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.569217558860779
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.52,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.858698408126831
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.548,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.173359799385071
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.564,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.462741302490234
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.58,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.777282669067382
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.26,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.31803265380859375
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.288,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6322264862060547
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.3,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.94568128490448
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.316,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.235808162689209
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.348,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5256378602981568
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.352,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8396082649230956
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.368,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.153799566268921
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.388,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4434620103836058
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.4,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.732802460670471
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.408,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0475006523132326
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.424,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.3612743463516237
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.444,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.651063542366028
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.472,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.940998650550842
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.484,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.254460776329041
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.52,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.568428784370423
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.532,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.858418053627014
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.564,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.1726077346801755
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.462963708877563
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.77732637500763
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ]
+    },
+    "seen_tasks_all_4": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.734,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.335013765335083
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.741,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6390885326862336
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.743,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9432009966373444
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.748,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2476321430206299
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.751,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.5511611785888673
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.753,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.854902798652649
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.756,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.1590113029479983
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.759,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.462021094083786
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.765,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.7646197690963743
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0687833411693575
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.3735537889003755
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6778138806819918
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.769,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.9813189363479613
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.766,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.284933711767197
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.766,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.587164281129837
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.769,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.8910643053054805
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.77,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.195113536596298
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.501968801498413
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.805425462245942
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.729,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.3345290758609772
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.732,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6377465653419495
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.737,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9432655863761902
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.747,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2460823369026184
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.751,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.5504236261844635
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.751,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.855044105529785
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.758,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.159651786327362
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.463057546377182
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.765997452020645
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.069995390176773
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.3736057150363923
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.677177763223648
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.9814030511379244
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.286970757246017
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.591267170190811
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.774,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.896213348150253
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.199892096996307
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.503560663461685
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.806946388244629
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ]
+    },
+    "excluded_seen_task": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.556,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028691335678100584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.3190908012390137
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.576,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6339537086486816
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.584,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.950331093788147
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2413548278808593
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5310860996246338
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8470945682525635
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.161913317680359
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.636,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.452048069000244
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.644,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.742832689285278
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.652,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0584085292816163
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.648,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.3739209861755373
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.66,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6665937328338623
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.664,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.958349067687988
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.668,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.273480151176453
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.672,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.588409070968628
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.668,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.878686812400818
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.676,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.194247526168823
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.676,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.485136552810669
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.68,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.8046577949523925
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.68,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.095729947090149
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.556,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028691335678100584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.552,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.3189046573638916
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.544,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6334060583114623
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.556,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9491629076004028
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.568,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.239626051902771
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.530831358909607
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.588,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8468185176849365
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.6,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.1621148653030398
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.6,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.456850001335144
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.612,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.7473391609191893
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.632,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0640372142791747
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.652,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.380295090675354
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.668,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6708682470321654
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.676,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.961197024345398
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.672,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.27638927936554
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.668,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.591171216011047
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.668,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.882235655784607
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.672,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.197479887962341
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.676,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.488557746887207
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.676,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.804220873832703
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.68,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.095729947090149
+        }
+      ]
+    }
+  },
+  "D_excl_science": {
+    "overall_all_5": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6464,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.3295043783187866
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.6504,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6354521528244018
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.6624,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.9415442941665649
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.6776,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2420722457885742
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.692,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.542088828277588
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.6936,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8483140716552735
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.7032,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.153904171562195
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.716,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.455129622268677
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7208,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.7556988592147826
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.7256,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.061595841598511
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.732,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.3675389739990234
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.7344,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.669224164199829
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.7368,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.969298146057129
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.736,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.274929330825806
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7368,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.581832152175903
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.7376,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.883223713684082
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7384,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.185640104675293
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.492048270606994
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.798356777763367
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6456,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.3282960319519043
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.6584,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6334305128097534
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.6728,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.9389971534729004
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.692,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2394496822357177
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.7,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.539858394241333
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.7072,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8471515933990479
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.7176,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.1523672555923463
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.7216,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4541457397460937
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7248,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.7558347930908202
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.7312,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0625483417510986
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.736,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.3681653043746946
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.7384,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.669659893608093
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.970338419532776
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.2767391778945925
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.584106272315979
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.887102208328247
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.1887202602386475
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.494378026771545
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.800848583221436
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ]
+    },
+    "word math": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.276,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.3175139665603638
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.288,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6322054567337037
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.296,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9461714735031128
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.312,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.235780824661255
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.34,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5258949394226073
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.372,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8398651781082154
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.4,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.1537217559814454
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.428,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.444116244316101
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.44,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.733728041648865
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.456,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.04794326877594
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.456,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.3618681926727296
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.456,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6511993436813355
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.464,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.941626953125
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.48,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.2562979755401615
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.508,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.570182037353516
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.528,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.860205719947815
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.544,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.174358247756958
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.56,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.4635500898361204
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.576,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.777422418594361
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.26,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.31803265380859375
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.288,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6322264862060547
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.3,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.94568128490448
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.32,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.235899510383606
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.348,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5256378602981568
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.352,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8396082649230956
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.368,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.153799566268921
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.388,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4434620103836058
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.4,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.732802460670471
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.408,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0475006523132326
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.424,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.361160608291626
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.444,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.651063542366028
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.468,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.941188856124878
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.488,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.254613095283508
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.52,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.568581114768982
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.536,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.858365205764771
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.56,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.172686319351197
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.462963708877563
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.77732637500763
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ]
+    },
+    "seen_tasks_all_4": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.735,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.3328045012950897
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.741,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6369887752532959
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.747,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9413004596233367
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.753,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2445031583309174
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.756,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.5496008861064912
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.759,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8542709584236146
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.762,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.1575931351184847
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.761,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4615207312107086
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.765,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.7656169533729553
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0693978021144868
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.769,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.3722363600730896
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.67462158036232
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.979350578069687
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.77,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.283342444181442
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.77,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.587307440280914
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.892452210903167
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.196725690364838
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.5000320658683775
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.804293021440506
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.729,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.3346445367336273
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.733,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6376993062496186
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.737,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9433035323619843
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.747,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2462491569519043
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.75,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.5507097430229186
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.751,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8548904693126678
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.758,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.159615424633026
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.463631162881851
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.7659989244937897
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0703526651859283
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.373651072263718
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.677014374256134
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.9814406397342683
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.286904200553894
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.5921555585861205
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.774,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.896488724470139
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.199892096996307
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.503560663461685
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.806946388244629
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ]
+    },
+    "excluded_seen_task": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.832,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028750933647155762
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.844,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.3232736520767212
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.856,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6386153173446655
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.86,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9550168790817261
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.86,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2474970531463623
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.86,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5399805269241333
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.868,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8535531597137451
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.868,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.1701573829650878
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4614354028701784
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.7542651624679566
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0712967405319214
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.394091075897217
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6855820541381834
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.977417510032654
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.292495800018311
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.60685142993927
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.900600578308105
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.220489912033081
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.511854082107544
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.830071301460266
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.123461283683777
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.832,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028750933647155762
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.848,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.32391570281982424
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.852,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6420119247436523
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.864,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9559679336547852
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.864,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2448601427078247
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.86,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5390742883682251
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.864,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.857215579032898
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.868,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.1715240449905395
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.464300093650818
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.868,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.755381088256836
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.868,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0700193462371828
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.868,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.3844682035446167
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6783810596466067
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.9724788274765013
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.289115475654602
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.606020567893982
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.902144341468811
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.2195550727844235
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.509956957817078
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.82921853351593
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.872,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.123461283683777
+        }
+      ]
+    }
+  },
+  "E_excl_general_knowledge": {
+    "overall_all_5": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6496,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.3287641429901123
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.6704,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6340996259689331
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.6784,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.9393725986480713
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.6928,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2400098764419556
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.7024,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.5400741018295288
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.7112,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8469197929382324
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.7192,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.152081426048279
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.7208,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.453444176673889
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7272,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.7552797595977783
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.7288,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.061774309921265
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.7304,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.36883324508667
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.7304,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6697348543167116
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.7328,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.9703754970550538
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.736,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.276753783607483
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7368,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.58317558002472
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.7384,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.885758290863037
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7376,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.186640159797668
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.7376,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.492376240348816
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.799101208305359
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.628,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.0287699161529541
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.0496,
+          "gated_accuracy": 0.6456,
+          "avg_generated_tokens": 12.6976,
+          "avg_latency_seconds": 0.3282960319519043
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.6584,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6329921356201171
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.1504,
+          "gated_accuracy": 0.6728,
+          "avg_generated_tokens": 38.5024,
+          "avg_latency_seconds": 0.9389791580200195
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.692,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2393655250549316
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.2496,
+          "gated_accuracy": 0.7,
+          "avg_generated_tokens": 63.8976,
+          "avg_latency_seconds": 1.5398862096786499
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.7088,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8470920059204101
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.3504,
+          "gated_accuracy": 0.7168,
+          "avg_generated_tokens": 89.7024,
+          "avg_latency_seconds": 2.152426196670532
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.7216,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4541457397460937
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.4496,
+          "gated_accuracy": 0.7248,
+          "avg_generated_tokens": 115.0976,
+          "avg_latency_seconds": 2.7558347930908202
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.7312,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0625483417510986
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.5504,
+          "gated_accuracy": 0.736,
+          "avg_generated_tokens": 140.9024,
+          "avg_latency_seconds": 3.3681074279785155
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.7384,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.669659893608093
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.6496,
+          "gated_accuracy": 0.7392,
+          "avg_generated_tokens": 166.2976,
+          "avg_latency_seconds": 3.9703707860946653
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.276889246940613
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.7504,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 192.1024,
+          "avg_latency_seconds": 4.584106272315979
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.7416,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.887058915328979
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.8496,
+          "gated_accuracy": 0.7408,
+          "avg_generated_tokens": 217.4976,
+          "avg_latency_seconds": 5.1887202602386475
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.494378026771545
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.9504,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 243.3024,
+          "avg_latency_seconds": 5.800848583221436
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.74,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.1012678855896
+        }
+      ]
+    },
+    "word math": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.28,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.31760875320434573
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.304,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6320887584686279
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.324,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.946058801651001
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.34,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2354628162384034
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.368,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.525012635231018
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.388,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.838577383995056
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.412,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.152348557472229
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.424,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.441433030128479
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.432,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.731494095802307
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.444,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0462796964645387
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.46,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.360316727638245
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.476,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.650224672317505
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.492,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.939994062423706
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.516,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.254174707412719
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.54,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.568157138824463
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.544,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.85844404888153
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.56,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.172695440292358
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.58,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.4626364994049075
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.592,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.776821047782898
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.256,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.02813370418548584
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.26,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.31803265380859375
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.288,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6322264862060547
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.3,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.94568128490448
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.32,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.235899510383606
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.348,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5256378602981568
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.352,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8396082649230956
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.368,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.153799566268921
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.388,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4434620103836058
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.4,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.732802460670471
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.408,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0475006523132326
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.42,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.361327869415283
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.444,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.651063542366028
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.468,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.941188856124878
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.488,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.254613095283508
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.52,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.568581114768982
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.536,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.858365205764771
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.56,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.172686319351197
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.462963708877563
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.77732637500763
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.608,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.066888807296753
+        }
+      ]
+    },
+    "seen_tasks_all_4": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.731,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.33413753294944765
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.738,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6379473164081574
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.746,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9430962677001953
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.751,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.245896520614624
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.752,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.5500367381572724
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.756,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8535559384822846
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.758,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.158160609960556
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.761,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.462479721546173
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.762,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.7669682550430297
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.762,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0703700299263
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.764,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.3736081681251524
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.767,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6777722768783567
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.769,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.9820502078533173
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.769,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.285508949518204
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.590475661754608
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.77,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.894260558128357
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.77,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.196957382917404
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.501410605192184
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.805652871847153
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.721,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.028928969144821168
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.05,
+          "gated_accuracy": 0.729,
+          "avg_generated_tokens": 12.8,
+          "avg_latency_seconds": 0.33467538571357724
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.733,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6376993062496186
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.15,
+          "gated_accuracy": 0.737,
+          "avg_generated_tokens": 38.4,
+          "avg_latency_seconds": 0.9433035323619843
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.746,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2463052082061767
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.25,
+          "gated_accuracy": 0.75,
+          "avg_generated_tokens": 64.0,
+          "avg_latency_seconds": 1.550316701412201
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.751,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8548904693126678
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.35,
+          "gated_accuracy": 0.758,
+          "avg_generated_tokens": 89.6,
+          "avg_latency_seconds": 2.1595831995010375
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.766,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4636286630630493
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.45,
+          "gated_accuracy": 0.768,
+          "avg_generated_tokens": 115.2,
+          "avg_latency_seconds": 2.765969707250595
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.771,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0703526651859283
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.55,
+          "gated_accuracy": 0.772,
+          "avg_generated_tokens": 140.8,
+          "avg_latency_seconds": 3.3737462480068205
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.677014374256134
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.65,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 166.4,
+          "avg_latency_seconds": 3.982005837202072
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.286904200553894
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.75,
+          "gated_accuracy": 0.775,
+          "avg_generated_tokens": 192.0,
+          "avg_latency_seconds": 4.592101442337036
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.774,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.896488724470139
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.85,
+          "gated_accuracy": 0.774,
+          "avg_generated_tokens": 217.6,
+          "avg_latency_seconds": 5.199762495040893
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.503560663461685
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.95,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 243.2,
+          "avg_latency_seconds": 5.806946388244629
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.773,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.109862655162812
+        }
+      ]
+    },
+    "excluded_seen_task": {
+      "learned": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.564,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.030470394134521486
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.3265472536087036
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6468947629928589
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.576,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9648494834899902
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.58,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.2552906274795532
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.58,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5472596569061279
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8688228883743285
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.588,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.1832498836517336
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.588,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.4742708873748778
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.592,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.7661397333145143
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.592,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.0833479251861573
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.58,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.4018459911346435
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.576,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.696266223907471
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.588,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.9866874465942383
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.592,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.302958167076111
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.6,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.618989273071289
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.6,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.912062216758728
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.229354677200317
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.5214549837112425
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.8380941333770755
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.13166215801239
+        }
+      ],
+      "confidence": [
+        {
+          "target_rate": 0.0,
+          "escalation_rate": 0.0,
+          "gated_accuracy": 0.564,
+          "avg_generated_tokens": 0.0,
+          "avg_latency_seconds": 0.030470394134521486
+        },
+        {
+          "target_rate": 0.05,
+          "escalation_rate": 0.048,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 12.288,
+          "avg_latency_seconds": 0.32563288021087644
+        },
+        {
+          "target_rate": 0.1,
+          "escalation_rate": 0.1,
+          "gated_accuracy": 0.572,
+          "avg_generated_tokens": 25.6,
+          "avg_latency_seconds": 0.6422008571624755
+        },
+        {
+          "target_rate": 0.15000000000000002,
+          "escalation_rate": 0.152,
+          "gated_accuracy": 0.592,
+          "avg_generated_tokens": 38.912,
+          "avg_latency_seconds": 0.9584922275543213
+        },
+        {
+          "target_rate": 0.2,
+          "escalation_rate": 0.2,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 51.2,
+          "avg_latency_seconds": 1.248314419746399
+        },
+        {
+          "target_rate": 0.25,
+          "escalation_rate": 0.248,
+          "gated_accuracy": 0.6,
+          "avg_generated_tokens": 63.488,
+          "avg_latency_seconds": 1.5417618789672851
+        },
+        {
+          "target_rate": 0.30000000000000004,
+          "escalation_rate": 0.3,
+          "gated_accuracy": 0.6,
+          "avg_generated_tokens": 76.8,
+          "avg_latency_seconds": 1.8637611637115479
+        },
+        {
+          "target_rate": 0.35000000000000003,
+          "escalation_rate": 0.352,
+          "gated_accuracy": 0.6,
+          "avg_generated_tokens": 90.112,
+          "avg_latency_seconds": 2.17978076171875
+        },
+        {
+          "target_rate": 0.4,
+          "escalation_rate": 0.4,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 102.4,
+          "avg_latency_seconds": 2.47292018032074
+        },
+        {
+          "target_rate": 0.45,
+          "escalation_rate": 0.448,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 114.688,
+          "avg_latency_seconds": 2.767936400413513
+        },
+        {
+          "target_rate": 0.5,
+          "escalation_rate": 0.5,
+          "gated_accuracy": 0.592,
+          "avg_generated_tokens": 128.0,
+          "avg_latency_seconds": 3.084358868598938
+        },
+        {
+          "target_rate": 0.55,
+          "escalation_rate": 0.552,
+          "gated_accuracy": 0.588,
+          "avg_generated_tokens": 141.312,
+          "avg_latency_seconds": 3.4000904922485353
+        },
+        {
+          "target_rate": 0.6000000000000001,
+          "escalation_rate": 0.6,
+          "gated_accuracy": 0.588,
+          "avg_generated_tokens": 153.6,
+          "avg_latency_seconds": 3.6931939468383788
+        },
+        {
+          "target_rate": 0.65,
+          "escalation_rate": 0.648,
+          "gated_accuracy": 0.588,
+          "avg_generated_tokens": 165.888,
+          "avg_latency_seconds": 3.9832012128829954
+        },
+        {
+          "target_rate": 0.7000000000000001,
+          "escalation_rate": 0.7,
+          "gated_accuracy": 0.592,
+          "avg_generated_tokens": 179.2,
+          "avg_latency_seconds": 4.298098683357239
+        },
+        {
+          "target_rate": 0.75,
+          "escalation_rate": 0.752,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 192.512,
+          "avg_latency_seconds": 4.616503525733948
+        },
+        {
+          "target_rate": 0.8,
+          "escalation_rate": 0.8,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 204.8,
+          "avg_latency_seconds": 4.909231919288636
+        },
+        {
+          "target_rate": 0.8500000000000001,
+          "escalation_rate": 0.852,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 218.112,
+          "avg_latency_seconds": 5.22555867767334
+        },
+        {
+          "target_rate": 0.9,
+          "escalation_rate": 0.9,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 230.4,
+          "avg_latency_seconds": 5.52130819606781
+        },
+        {
+          "target_rate": 0.9500000000000001,
+          "escalation_rate": 0.952,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 243.712,
+          "avg_latency_seconds": 5.836935964584351
+        },
+        {
+          "target_rate": 1.0,
+          "escalation_rate": 1.0,
+          "gated_accuracy": 0.596,
+          "avg_generated_tokens": 256.0,
+          "avg_latency_seconds": 6.13166215801239
+        }
+      ]
+    }
+  }
+}
