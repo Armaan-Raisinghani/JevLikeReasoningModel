@@ -293,6 +293,18 @@ def get_tokenizer(model_name: str, rt: dict[str, Any]) -> Any:
     return tokenizer
 
 
+def get_letter_ids(tokenizer: Any) -> dict[str, int]:
+    letter_ids: dict[str, int] = {}
+    for letter in LETTERS:
+        ids = tokenizer.encode(" " + letter, add_special_tokens=False)
+        if len(ids) != 1:
+            ids = tokenizer.encode(letter, add_special_tokens=False)
+        if len(ids) != 1:
+            raise RuntimeError(f"Answer choice {letter} is not a single token: {ids}")
+        letter_ids[letter] = int(ids[0])
+    return letter_ids
+
+
 def discover_layers(model: Any) -> tuple[Any, str]:
     for attr_path in ("model.layers", "model.model.layers", "transformer.h"):
         node = model
@@ -608,43 +620,47 @@ def restricted_probs(logits: Any, n_options: int, letter_ids: dict[str, int], np
     return torch.softmax(logits[ids].float(), dim=-1).detach().cpu().numpy().astype(float).tolist()
 
 
-def infer_one(model: Any, tokenizer: Any, ex: dict[str, Any], ctx: dict[str, Any], args: argparse.Namespace,
-              rt: dict[str, Any]) -> dict[str, Any]:
-    torch = rt["torch"]
-    start = time.perf_counter()
-    text = prompt_for(ex)
-    encoded = tokenizer(text, return_tensors="pt").to(model.device)
-    with torch.inference_mode():
-        output = model(**encoded, output_hidden_states=True, use_cache=True)
-    hidden_full = output.hidden_states[-1][0, -1].float().detach().cpu().numpy()
-    # Compact the gate representation so prediction caches remain small and the
-    # gate cannot overfit thousands of hidden dimensions on a small validation set.
-    chunks = rt["np"].array_split(hidden_full, 16)
-    hidden = rt["np"].asarray([v for chunk in chunks for v in (float(chunk.mean()), float(chunk.std()))] +
-                              [float(hidden_full.mean()), float(hidden_full.std()),
-                               float(rt["np"].linalg.norm(hidden_full))], dtype=float)
-    fast = restricted_probs(output.logits[0, -1], len(ex["options"]), ctx["letter_ids"], rt["np"])
-    fast_seconds = time.perf_counter() - start
+def infer_fast(model: Any, tokenizer: Any, ex: dict[str, Any], ctx: dict[str, Any],
+               rt: dict[str, Any], include_hidden: bool = True) -> dict[str, Any]:
+    encoded = tokenizer(prompt_for(ex), return_tensors="pt").to(model.device)
+    with rt["torch"].inference_mode():
+        output = model(**encoded, output_hidden_states=include_hidden, use_cache=True)
+    result = {"generated_tokens": 0}
+    if include_hidden:
+        hidden = output.hidden_states[-1][0, -1].float().detach().cpu().numpy()
+        chunks = rt["np"].array_split(hidden, 16)
+        result["hidden"] = [float(v) for chunk in chunks for v in (chunk.mean(), chunk.std())]
+        result["hidden"].extend((float(hidden.mean()), float(hidden.std()), float(rt["np"].linalg.norm(hidden))))
+    result["probs"] = restricted_probs(output.logits[0, -1], len(ex["options"]), ctx["letter_ids"], rt["np"])
+    return result
 
-    # For an escalated request the user paid for the fast pass too, so gated
-    # latency must include both the initial classification and reasoning work.
+
+def infer_reasoning(model: Any, tokenizer: Any, ex: dict[str, Any], ctx: dict[str, Any],
+                    args: argparse.Namespace, rt: dict[str, Any], include_hidden: bool = False) -> dict[str, Any]:
     reasoning_prompt = prompt_for(ex, reasoning=True)
     rinputs = tokenizer(reasoning_prompt, return_tensors="pt").to(model.device)
-    with torch.inference_mode():
+    with rt["torch"].inference_mode():
         generated = model.generate(**rinputs, max_new_tokens=args.max_reason_tokens, do_sample=False,
                                    use_cache=True, pad_token_id=tokenizer.pad_token_id,
                                    eos_token_id=tokenizer.eos_token_id)
-    scratch = tokenizer.decode(generated[0, rinputs["input_ids"].shape[1]:], skip_special_tokens=True)
-    suffix = "\nFinal answer:"
-    full = tokenizer(reasoning_prompt + scratch + suffix, return_tensors="pt").to(model.device)
-    with torch.inference_mode():
-        final = model(**full, output_hidden_states=True)
-    reasoning = restricted_probs(final.logits[0, -1], len(ex["options"]), ctx["letter_ids"], rt["np"])
-    reasoning_seconds = time.perf_counter() - start
-    return {"fast": {"probs": fast, "hidden": hidden.astype(float).tolist(), "generated_tokens": 0,
-                     "seconds": fast_seconds},
-            "reasoning": {"probs": reasoning, "generated_tokens": int(generated.shape[1] - rinputs["input_ids"].shape[1]),
-                          "seconds": reasoning_seconds, "scratch": scratch}}
+    continuation = generated[0, rinputs["input_ids"].shape[1]:]
+    scratch = tokenizer.decode(continuation, skip_special_tokens=True)
+    full = tokenizer(reasoning_prompt + scratch + "\nFinal answer:", return_tensors="pt").to(model.device)
+    with rt["torch"].inference_mode():
+        final = model(**full, output_hidden_states=include_hidden)
+    probs = restricted_probs(final.logits[0, -1], len(ex["options"]), ctx["letter_ids"], rt["np"])
+    return {"probs": probs, "generated_tokens": int(continuation.shape[0]), "scratch": scratch}
+
+
+def infer_one(model: Any, tokenizer: Any, ex: dict[str, Any], ctx: dict[str, Any], args: argparse.Namespace,
+              rt: dict[str, Any]) -> dict[str, Any]:
+    start = time.perf_counter()
+    fast = infer_fast(model, tokenizer, ex, ctx, rt)
+    fast["seconds"] = time.perf_counter() - start
+    # The cached reasoning path includes the initial fast pass for cascade timing.
+    reasoning = infer_reasoning(model, tokenizer, ex, ctx, args, rt, include_hidden=True)
+    reasoning["seconds"] = time.perf_counter() - start
+    return {"fast": fast, "reasoning": reasoning}
 
 
 def run_predictions(model: Any, tokenizer: Any, examples: list[dict[str, Any]], path: Path, fingerprint: str,
@@ -958,14 +974,7 @@ def main() -> None:
     rt = load_runtime()
     ctx = setup(args, rt)
     tokenizer = get_tokenizer(PRIMARY_MODEL, rt)
-    letter_ids: dict[str, int] = {}
-    for letter in LETTERS:
-        ids = tokenizer.encode(" " + letter, add_special_tokens=False)
-        if len(ids) != 1:
-            ids = tokenizer.encode(letter, add_special_tokens=False)
-        if len(ids) != 1:
-            raise RuntimeError(f"Answer choice {letter} is not a single token: {ids}")
-        letter_ids[letter] = int(ids[0])
+    letter_ids = get_letter_ids(tokenizer)
     ctx["letter_ids"] = letter_ids
     ctx["hf_home"] = hf_home
     write_json(ctx["root"] / "run_config.json", {**ctx["config"], "selected_variants": selected,
