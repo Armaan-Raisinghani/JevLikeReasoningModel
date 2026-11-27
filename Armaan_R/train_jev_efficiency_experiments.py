@@ -24,6 +24,7 @@ import math
 import os
 import pickle
 import random
+import re
 import shutil
 import time
 from pathlib import Path
@@ -352,6 +353,23 @@ def prompt_for(ex: dict[str, Any], reasoning: bool = False) -> str:
     return body + ("\nReasoning:" if reasoning else "")
 
 
+def generate_teacher_trace(teacher: Any, tokenizer: Any, ex: dict[str, Any],
+                           rt: dict[str, Any]) -> dict[str, Any] | None:
+    torch = rt["torch"]
+    ask = prompt_for(ex) + "\nReason in under 150 words. End with exactly: Final answer: X"
+    enc = tokenizer(ask, return_tensors="pt").to(teacher.device)
+    with torch.no_grad():
+        gen = teacher.generate(**enc, max_new_tokens=220, do_sample=False, use_cache=True,
+                               pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id)
+    completion = tokenizer.decode(gen[0, enc["input_ids"].shape[1]:], skip_special_tokens=True)
+    matches = re.findall(r"Final answer:\s*([ABCDE])", completion, re.I)
+    if matches and LETTERS.index(matches[-1].upper()) == ex["label"]:
+        cutoff = completion.lower().rfind("final answer:")
+        return {"id": ex["id"], "task": ex["task"], "reasoning": completion[:cutoff].strip(),
+                         "answer": LETTERS[ex["label"]]}
+    return None
+
+
 def load_or_make_traces(ctx: dict[str, Any], rt: dict[str, Any], args: argparse.Namespace,
                         tokenizer: Any, data: dict[str, Any]) -> list[dict[str, Any]]:
     np = rt["np"]
@@ -395,18 +413,9 @@ def load_or_make_traces(ctx: dict[str, Any], rt: dict[str, Any], args: argparse.
     accepted: list[dict[str, Any]] = []
     torch = rt["torch"]
     for index, ex in enumerate(eligible, 1):
-        ask = prompt_for(ex) + "\nReason in under 150 words. End with exactly: Final answer: X"
-        enc = tokenizer(ask, return_tensors="pt").to(teacher.device)
-        with torch.no_grad():
-            gen = teacher.generate(**enc, max_new_tokens=220, do_sample=False, use_cache=True,
-                                   pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id)
-        completion = tokenizer.decode(gen[0, enc["input_ids"].shape[1]:], skip_special_tokens=True)
-        import re
-        matches = re.findall(r"Final answer:\s*([ABCDE])", completion, re.I)
-        if matches and LETTERS.index(matches[-1].upper()) == ex["label"]:
-            cutoff = completion.lower().rfind("final answer:")
-            accepted.append({"id": ex["id"], "task": ex["task"], "reasoning": completion[:cutoff].strip(),
-                             "answer": LETTERS[ex["label"]]})
+        trace = generate_teacher_trace(teacher, tokenizer, ex, rt)
+        if trace:
+            accepted.append(trace)
         if index % 5 == 0 or index == len(eligible):
             write_json(path, accepted)
             print(f"Teacher traces {index}/{len(eligible)}; accepted {len(accepted)}")
@@ -428,7 +437,7 @@ def model_fingerprint(variant: str, spec: dict[str, Any], ctx: dict[str, Any], a
 
 def train_variant(variant: str, spec: dict[str, Any], fingerprint: str, traces: list[dict[str, Any]],
                   data: dict[str, Any], tokenizer: Any, ctx: dict[str, Any], rt: dict[str, Any],
-                  args: argparse.Namespace) -> tuple[Path | None, dict[str, Any]]:
+                  args: argparse.Namespace, *, direct_ids: set[str] | None = None) -> tuple[Path | None, dict[str, Any]]:
     torch = rt["torch"]
     artifact_dir = ctx["root"] / "variants" / variant / fingerprint
     adapter_dir = artifact_dir / "adapter"
@@ -493,8 +502,11 @@ def train_variant(variant: str, spec: dict[str, Any], fingerprint: str, traces: 
     else:
         raise ValueError(f"Unsupported training recipe: {spec['training']}")
 
-    train_rows: list[dict[str, Any]] = [{"ex": r, "trace": None} for task in SEEN_TASKS for r in data[task]["train"]]
     by_id = {r["id"]: r for task in SEEN_TASKS for r in data[task]["train"]}
+    train_rows: list[dict[str, Any]] = [
+        {"ex": r, "trace": None} for task in SEEN_TASKS for r in data[task]["train"]
+        if direct_ids is None or r["id"] in direct_ids
+    ]
     train_ids = set(by_id)
     if any(t["id"] not in train_ids for t in traces):
         raise RuntimeError("Teacher trace refers to a non-training example")

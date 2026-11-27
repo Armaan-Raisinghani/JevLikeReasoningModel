@@ -50,23 +50,38 @@ def gate_scores(name, rows, gate, rt):
     return [1.0 - max(row["fast"][key]) for row in rows]
 
 
-def choose_operating_points(rows, scores, budget, gap, np):
+def choose_operating_points(rows, scores, budget, gap, np, target_seconds=None):
     scores = np.asarray(scores, dtype=float)
     fast = np.asarray([np.argmax(r["fast"]["probs"]) == r["label"] for r in rows], dtype=int)
     reason = np.asarray([np.argmax(r["reasoning"]["probs"]) == r["label"] for r in rows], dtype=int)
     candidates = []
+    if target_seconds is not None:
+        fast_seconds = np.asarray([r["fast"]["seconds"] for r in rows])
+        # infer_one records reasoning time inclusive of the fast pass.
+        cascade_seconds = np.asarray([r["reasoning"]["seconds"] for r in rows])
     # A finite threshold above every probability allows the no-escalation policy.
     for threshold in sorted(set(scores.tolist() + [2.0])):
         route = scores >= threshold
         candidates.append({"threshold": threshold, "validation_escalation": float(route.mean()),
                            "validation_accuracy": float(np.where(route, reason, fast).mean())})
+        if target_seconds is not None:
+            candidates[-1]["validation_estimated_mean_seconds"] = float(
+                np.where(route, cascade_seconds, fast_seconds).mean()
+            )
     at_budget = [p for p in candidates if p["validation_escalation"] <= budget]
     near_reason = [p for p in candidates if p["validation_accuracy"] >= reason.mean() - gap - 1e-12]
-    return {
+    points = {
         "escalation_budget": max(at_budget, key=lambda p: (p["validation_accuracy"], -p["validation_escalation"])),
         "accuracy_gap": min(near_reason, key=lambda p: (p["validation_escalation"], -p["validation_accuracy"])),
     }
 
+    if target_seconds is not None:
+        within_target = [p for p in candidates if p["validation_estimated_mean_seconds"] <= target_seconds]
+        if within_target:
+            points["latency_target"] = max(
+                within_target, key=lambda p: (p["validation_accuracy"], -p["validation_estimated_mean_seconds"])
+            )
+    return points
 
 
 def time_policy(name, threshold, examples, model, tokenizer, ctx, args, rt, gate, temperature):
@@ -137,9 +152,16 @@ def main():
               "gpu": torch.cuda.get_device_name(), "hf_home": hf_home}
     root = ctx["root"]
     jev.write_json(root / "run_config.json", config)
+    evaluate(model, tokenizer, validation, test, ctx, args, rt, config)
+
+
+def evaluate(model, tokenizer, validation, test, ctx, args, rt, config, *,
+             checkpoint_id=None, gates=GATES, operating_points=("escalation_budget", "accuracy_gap"),
+             target_seconds=None):
+    root = ctx["root"]
     print(f"Scoring {len(validation)} seen-task validation questions", flush=True)
     fingerprint = jev.digest([jev.SCRIPT_VERSION, config["model"], config["model_revision"], ctx["precision"],
-                              args.max_reason_tokens, ctx["letter_ids"], validation])
+                              args.max_reason_tokens, ctx["letter_ids"], validation, checkpoint_id])
     rows = jev.run_predictions(model, tokenizer, validation, root / "validation_predictions.json",
                                fingerprint, ctx, args, rt)
     temperatures = {mode: jev.fit_temperature(rows, mode, rt) for mode in ("fast", "reasoning")}
@@ -148,13 +170,15 @@ def main():
     if gate is None:
         print("Learned rescue gate unavailable: validation needs rescue and non-rescue examples.", flush=True)
     policies = {"fast_only": ("fast_only", None), "always_reason": ("always_reason", None)}
-    for name in GATES:
+    for name in gates:
         if name == "learned_rescue" and gate is None:
             continue
         scores = gate_scores(name, rows, gate, rt)
-        points = choose_operating_points(rows, scores, args.target_escalation, args.accuracy_gap, rt["np"])
+        points = choose_operating_points(rows, scores, args.target_escalation, args.accuracy_gap,
+                                         rt["np"], target_seconds=target_seconds)
         for target, point in points.items():
-            policies[f"{name}_{target}"] = (name, point)
+            if target in operating_points:
+                policies[f"{name}_{target}"] = (name, point)
 
     # Warm both paths on validation examples so every test question remains in the metrics.
     for ex in validation[:3]:
