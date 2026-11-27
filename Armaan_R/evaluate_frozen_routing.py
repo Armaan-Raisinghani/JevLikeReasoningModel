@@ -84,29 +84,33 @@ def choose_operating_points(rows, scores, budget, gap, np, target_seconds=None):
     return points
 
 
+def time_request(name, threshold, ex, model, tokenizer, ctx, args, rt, gate, temperature):
+    torch, np = rt["torch"], rt["np"]
+    torch.cuda.synchronize()
+    start = time.perf_counter()
+    escalate = name == "always_reason"
+    if not escalate:
+        fast = jev.infer_fast(model, tokenizer, ex, ctx, rt, include_hidden=name == "learned_rescue")
+        result = fast
+        if name in GATES:
+            if name != "raw_confidence":
+                p = np.asarray(fast["probs"], dtype=float) ** (1 / temperature)
+                fast["calibrated_probs"] = (p / p.sum()).tolist()
+            row = {"fast": fast, "n_options": len(ex["options"])}
+            escalate = bool(gate_scores(name, [row], gate, rt)[0] >= threshold)
+    if escalate:
+        result = jev.infer_reasoning(model, tokenizer, ex, ctx, args, rt)
+    torch.cuda.synchronize()
+    seconds = time.perf_counter() - start
+    return {"id": ex["id"], "task": ex["task"], "label": ex["label"],
+            "prediction": int(np.argmax(result["probs"])), "escalated": escalate,
+            "generated_tokens": result["generated_tokens"], "seconds": seconds}
+
+
 def time_policy(name, threshold, examples, model, tokenizer, ctx, args, rt, gate, temperature):
     results = []
     for i, ex in enumerate(examples, 1):
-        torch, np = rt["torch"], rt["np"]
-        torch.cuda.synchronize()
-        start = time.perf_counter()
-        escalate = name == "always_reason"
-        if not escalate:
-            fast = jev.infer_fast(model, tokenizer, ex, ctx, rt, include_hidden=name == "learned_rescue")
-            result = fast
-            if name in GATES:
-                if name != "raw_confidence":
-                    p = np.asarray(fast["probs"], dtype=float) ** (1 / temperature)
-                    fast["calibrated_probs"] = (p / p.sum()).tolist()
-                row = {"fast": fast, "n_options": len(ex["options"])}
-                escalate = bool(gate_scores(name, [row], gate, rt)[0] >= threshold)
-        if escalate:
-            result = jev.infer_reasoning(model, tokenizer, ex, ctx, args, rt)
-        torch.cuda.synchronize()
-        seconds = time.perf_counter() - start
-        results.append({"id": ex["id"], "task": ex["task"], "label": ex["label"],
-                "prediction": int(np.argmax(result["probs"])), "escalated": escalate,
-                "generated_tokens": result["generated_tokens"], "seconds": seconds})
+        results.append(time_request(name, threshold, ex, model, tokenizer, ctx, args, rt, gate, temperature))
         if i % 100 == 0 or i == len(examples):
             print(f"  {i}/{len(examples)} questions timed", flush=True)
     return results
