@@ -1,0 +1,17 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "adapter": "387cc25dc2b24b50df47fa3d3cec1464c29cb8eed2b52e193937e5cd7b33ade1",
+  "precision": "bf16",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "torch_version": "2.13.0+cu130",
+  "max_reason_tokens": 256,
+  "hf_home": "/scratch/armaan.r.ug24/jev-efficiency-14610/hf",
+  "test_examples": 500,
+  "test_digest": "f0a4aeb472ffef3bbff42ada8626382fbf976d493a0ce5656f0231a80346b812",
+  "raw_confidence_thresholds": {
+    "frozen": 0.18711745738983154,
+    "unmerged_lora": 0.16702640056610107,
+    "merged_lora": 0.16702640056610107
+  }
+}
