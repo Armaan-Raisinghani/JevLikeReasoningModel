@@ -1,0 +1,432 @@
+{
+  "config": {
+    "script_version": "1.6",
+    "seed": 2026,
+    "smoke": false,
+    "models": {
+      "primary": "Qwen/Qwen3-1.7B",
+      "small": "Qwen/Qwen3-0.6B",
+      "teacher": "Qwen/Qwen3-4B"
+    },
+    "max_reason_tokens": 256,
+    "max_seq_len": 1024,
+    "epochs": 2,
+    "training_precision": "bf16",
+    "learning_rate": 0.0002,
+    "train_per_task": 2000,
+    "val_per_task": 100,
+    "test_per_task": 100,
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.05
+    },
+    "gate_escalation_cost": 0.02,
+    "hf_hub_disable_xet": "1",
+    "hf_hub_download_timeout": "default",
+    "teacher_model_requested": "Qwen/Qwen3-4B",
+    "direct_per_task": 270,
+    "target_accepted_traces": 1500,
+    "max_trace_attempts": 3000,
+    "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "teacher_model_used": "Qwen/Qwen3-1.7B",
+    "reference_split_digest": "7e2bf9de753f3ada42bcb2a52ccf55434beed3e01e8ab2dac7b51236648dc9a6",
+    "model": "Qwen/Qwen3-1.7B",
+    "hf_home": "/scratch/armaan.r.ug24/jev-efficiency-14610/hf",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+    "reference_dir": "/scratch/armaan.r.ug24/jev-frozen-routing-17248/output",
+    "target_mean_seconds": 1.0324353703889064,
+    "validation_examples": 400,
+    "test_examples": 500,
+    "adapter": {
+      "path": "/scratch/armaan.r.ug24/jev-lora-routing-17248/variants/lora_all/387cc25dc2b24b50df47fa3d3cec1464c29cb8eed2b52e193937e5cd7b33ade1/adapter",
+      "fingerprint": "387cc25dc2b24b50df47fa3d3cec1464c29cb8eed2b52e193937e5cd7b33ade1",
+      "training_config": {
+        "script_version": "1.6",
+        "seed": 2026,
+        "smoke": false,
+        "models": {
+          "primary": "Qwen/Qwen3-1.7B",
+          "small": "Qwen/Qwen3-0.6B",
+          "teacher": "Qwen/Qwen3-4B"
+        },
+        "max_reason_tokens": 256,
+        "max_seq_len": 1024,
+        "epochs": 2,
+        "training_precision": "bf16",
+        "learning_rate": 0.0002,
+        "train_per_task": 2000,
+        "val_per_task": 100,
+        "test_per_task": 100,
+        "lora": {
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05
+        },
+        "gate_escalation_cost": 0.02,
+        "hf_hub_disable_xet": "1",
+        "hf_hub_download_timeout": "default",
+        "teacher_model_requested": "Qwen/Qwen3-4B",
+        "direct_per_task": 270,
+        "target_accepted_traces": 1500,
+        "max_trace_attempts": 3000,
+        "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "teacher_model_used": "Qwen/Qwen3-1.7B",
+        "reference_split_digest": "7e2bf9de753f3ada42bcb2a52ccf55434beed3e01e8ab2dac7b51236648dc9a6"
+      },
+      "training_stats": {
+        "training_seconds": 646.4995826038066,
+        "trainable_parameters": 17432576,
+        "pruning": null,
+        "peak_training_gpu_bytes": 10250227712
+      },
+      "direct_examples": 1080,
+      "trace_attempts": 1926,
+      "accepted_traces": 1500
+    }
+  },
+  "temperatures": {
+    "fast": 3.0562283196426123,
+    "reasoning": 6.283619030321596
+  },
+  "results": {
+    "fast_only": {
+      "selection": null,
+      "overall": {
+        "n": 500,
+        "accuracy": 0.626,
+        "escalation_rate": 0.0,
+        "mean_generated_tokens": 0.0,
+        "mean_seconds": 0.027794482334516944,
+        "p95_seconds": 0.02880963587667793
+      },
+      "by_task": {
+        "sentiment": {
+          "n": 100,
+          "accuracy": 0.94,
+          "escalation_rate": 0.0,
+          "mean_generated_tokens": 0.0,
+          "mean_seconds": 0.02700500311329961,
+          "p95_seconds": 0.02733014039695263
+        },
+        "inference": {
+          "n": 100,
+          "accuracy": 0.56,
+          "escalation_rate": 0.0,
+          "mean_generated_tokens": 0.0,
+          "mean_seconds": 0.02776315524009988,
+          "p95_seconds": 0.028720730647910385
+        },
+        "science questions": {
+          "n": 100,
+          "accuracy": 0.82,
+          "escalation_rate": 0.0,
+          "mean_generated_tokens": 0.0,
+          "mean_seconds": 0.027532250296790153,
+          "p95_seconds": 0.02794271968305111
+        },
+        "general knowledge": {
+          "n": 100,
+          "accuracy": 0.51,
+          "escalation_rate": 0.0,
+          "mean_generated_tokens": 0.0,
+          "mean_seconds": 0.029337349985726176,
+          "p95_seconds": 0.03867244550492614
+        },
+        "word math": {
+          "n": 100,
+          "accuracy": 0.3,
+          "escalation_rate": 0.0,
+          "mean_generated_tokens": 0.0,
+          "mean_seconds": 0.027334653036668898,
+          "p95_seconds": 0.027629319613333793
+        }
+      }
+    },
+    "always_reason": {
+      "selection": null,
+      "overall": {
+        "n": 500,
+        "accuracy": 0.718,
+        "escalation_rate": 1.0,
+        "mean_generated_tokens": 256.0,
+        "mean_seconds": 6.5007844919301565,
+        "p95_seconds": 6.561009067553096
+      },
+      "by_task": {
+        "sentiment": {
+          "n": 100,
+          "accuracy": 0.93,
+          "escalation_rate": 1.0,
+          "mean_generated_tokens": 256.0,
+          "mean_seconds": 6.50178301961394,
+          "p95_seconds": 6.571433924220036
+        },
+        "inference": {
+          "n": 100,
+          "accuracy": 0.65,
+          "escalation_rate": 1.0,
+          "mean_generated_tokens": 256.0,
+          "mean_seconds": 6.505665557074826,
+          "p95_seconds": 6.557598890282679
+        },
+        "science questions": {
+          "n": 100,
+          "accuracy": 0.85,
+          "escalation_rate": 1.0,
+          "mean_generated_tokens": 256.0,
+          "mean_seconds": 6.495277708505746,
+          "p95_seconds": 6.533305667643435
+        },
+        "general knowledge": {
+          "n": 100,
+          "accuracy": 0.57,
+          "escalation_rate": 1.0,
+          "mean_generated_tokens": 256.0,
+          "mean_seconds": 6.509061137477402,
+          "p95_seconds": 6.6057047788403
+        },
+        "word math": {
+          "n": 100,
+          "accuracy": 0.59,
+          "escalation_rate": 1.0,
+          "mean_generated_tokens": 256.0,
+          "mean_seconds": 6.492135036978871,
+          "p95_seconds": 6.52923067973461
+        }
+      }
+    },
+    "raw_confidence_escalation_budget": {
+      "selection": {
+        "threshold": 0.16702640056610107,
+        "validation_escalation": 0.2125,
+        "validation_accuracy": 0.7325,
+        "validation_estimated_mean_seconds": 1.4199067253922113
+      },
+      "overall": {
+        "n": 500,
+        "accuracy": 0.692,
+        "escalation_rate": 0.288,
+        "mean_generated_tokens": 73.728,
+        "mean_seconds": 1.9011707631475292,
+        "p95_seconds": 6.561510982399341
+      },
+      "by_task": {
+        "sentiment": {
+          "n": 100,
+          "accuracy": 0.93,
+          "escalation_rate": 0.03,
+          "mean_generated_tokens": 7.68,
+          "mean_seconds": 0.22477259267820046,
+          "p95_seconds": 0.028590573742985726
+        },
+        "inference": {
+          "n": 100,
+          "accuracy": 0.6,
+          "escalation_rate": 0.28,
+          "mean_generated_tokens": 71.68,
+          "mean_seconds": 1.8543482517567462,
+          "p95_seconds": 6.560790491162334
+        },
+        "science questions": {
+          "n": 100,
+          "accuracy": 0.85,
+          "escalation_rate": 0.07,
+          "mean_generated_tokens": 17.92,
+          "mean_seconds": 0.4822688078065403,
+          "p95_seconds": 6.485456393763888
+        },
+        "general knowledge": {
+          "n": 100,
+          "accuracy": 0.57,
+          "escalation_rate": 0.29,
+          "mean_generated_tokens": 74.24,
+          "mean_seconds": 1.9056727710575796,
+          "p95_seconds": 6.540723877598066
+        },
+        "word math": {
+          "n": 100,
+          "accuracy": 0.51,
+          "escalation_rate": 0.77,
+          "mean_generated_tokens": 197.12,
+          "mean_seconds": 5.038791392438579,
+          "p95_seconds": 6.624272842518986
+        }
+      }
+    },
+    "raw_confidence_latency_target": {
+      "selection": {
+        "threshold": 0.26974403858184814,
+        "validation_escalation": 0.1525,
+        "validation_accuracy": 0.715,
+        "validation_estimated_mean_seconds": 1.027473627870786
+      },
+      "overall": {
+        "n": 500,
+        "accuracy": 0.672,
+        "escalation_rate": 0.214,
+        "mean_generated_tokens": 54.784,
+        "mean_seconds": 1.369396242271643,
+        "p95_seconds": 6.506547987589147
+      },
+      "by_task": {
+        "sentiment": {
+          "n": 100,
+          "accuracy": 0.93,
+          "escalation_rate": 0.01,
+          "mean_generated_tokens": 2.56,
+          "mean_seconds": 0.09150978630874305,
+          "p95_seconds": 0.027570849866606295
+        },
+        "inference": {
+          "n": 100,
+          "accuracy": 0.56,
+          "escalation_rate": 0.19,
+          "mean_generated_tokens": 48.64,
+          "mean_seconds": 1.260811670680996,
+          "p95_seconds": 6.543099989672191
+        },
+        "science questions": {
+          "n": 100,
+          "accuracy": 0.83,
+          "escalation_rate": 0.04,
+          "mean_generated_tokens": 10.24,
+          "mean_seconds": 0.28604293792741375,
+          "p95_seconds": 0.02846056432463228
+        },
+        "general knowledge": {
+          "n": 100,
+          "accuracy": 0.56,
+          "escalation_rate": 0.23,
+          "mean_generated_tokens": 58.88,
+          "mean_seconds": 1.50826524986187,
+          "p95_seconds": 6.539131895336323
+        },
+        "word math": {
+          "n": 100,
+          "accuracy": 0.48,
+          "escalation_rate": 0.6,
+          "mean_generated_tokens": 153.6,
+          "mean_seconds": 3.700351566579193,
+          "p95_seconds": 6.2306341648334636
+        }
+      }
+    },
+    "learned_rescue_escalation_budget": {
+      "selection": {
+        "threshold": 0.6157833746610097,
+        "validation_escalation": 0.235,
+        "validation_accuracy": 0.775,
+        "validation_estimated_mean_seconds": 1.5678393065847922
+      },
+      "overall": {
+        "n": 500,
+        "accuracy": 0.658,
+        "escalation_rate": 0.188,
+        "mean_generated_tokens": 48.128,
+        "mean_seconds": 1.1652553622447885,
+        "p95_seconds": 6.144209519261494
+      },
+      "by_task": {
+        "sentiment": {
+          "n": 100,
+          "accuracy": 0.93,
+          "escalation_rate": 0.02,
+          "mean_generated_tokens": 5.12,
+          "mean_seconds": 0.14853348640026526,
+          "p95_seconds": 0.029318108200095592
+        },
+        "inference": {
+          "n": 100,
+          "accuracy": 0.62,
+          "escalation_rate": 0.4,
+          "mean_generated_tokens": 102.4,
+          "mean_seconds": 2.440687310856301,
+          "p95_seconds": 6.145867863274179
+        },
+        "science questions": {
+          "n": 100,
+          "accuracy": 0.85,
+          "escalation_rate": 0.17,
+          "mean_generated_tokens": 43.52,
+          "mean_seconds": 1.0555294472374954,
+          "p95_seconds": 6.140703030594159
+        },
+        "general knowledge": {
+          "n": 100,
+          "accuracy": 0.55,
+          "escalation_rate": 0.2,
+          "mean_generated_tokens": 51.2,
+          "mean_seconds": 1.2512427408178337,
+          "p95_seconds": 6.166520587715786
+        },
+        "word math": {
+          "n": 100,
+          "accuracy": 0.34,
+          "escalation_rate": 0.15,
+          "mean_generated_tokens": 38.4,
+          "mean_seconds": 0.9302838259120472,
+          "p95_seconds": 6.0839555985061455
+        }
+      }
+    },
+    "learned_rescue_latency_target": {
+      "selection": {
+        "threshold": 0.7372632136254145,
+        "validation_escalation": 0.15,
+        "validation_accuracy": 0.7475,
+        "validation_estimated_mean_seconds": 1.012054318409646
+      },
+      "overall": {
+        "n": 500,
+        "accuracy": 0.644,
+        "escalation_rate": 0.13,
+        "mean_generated_tokens": 33.28,
+        "mean_seconds": 0.8117551866588183,
+        "p95_seconds": 6.063614300347399
+      },
+      "by_task": {
+        "sentiment": {
+          "n": 100,
+          "accuracy": 0.93,
+          "escalation_rate": 0.01,
+          "mean_generated_tokens": 2.56,
+          "mean_seconds": 0.0879990068729967,
+          "p95_seconds": 0.02872167860623449
+        },
+        "inference": {
+          "n": 100,
+          "accuracy": 0.59,
+          "escalation_rate": 0.28,
+          "mean_generated_tokens": 71.68,
+          "mean_seconds": 1.7291315687587485,
+          "p95_seconds": 6.143302558350842
+        },
+        "science questions": {
+          "n": 100,
+          "accuracy": 0.84,
+          "escalation_rate": 0.13,
+          "mean_generated_tokens": 33.28,
+          "mean_seconds": 0.8057773538446054,
+          "p95_seconds": 6.023551199340727
+        },
+        "general knowledge": {
+          "n": 100,
+          "accuracy": 0.55,
+          "escalation_rate": 0.15,
+          "mean_generated_tokens": 38.4,
+          "mean_seconds": 0.9294503187853843,
+          "p95_seconds": 6.036664931871928
+        },
+        "word math": {
+          "n": 100,
+          "accuracy": 0.31,
+          "escalation_rate": 0.08,
+          "mean_generated_tokens": 20.48,
+          "mean_seconds": 0.5064176850323565,
+          "p95_seconds": 6.016382881067694
+        }
+      }
+    }
+  }
+}

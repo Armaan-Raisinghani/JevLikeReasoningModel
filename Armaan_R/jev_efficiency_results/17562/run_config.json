@@ -1,0 +1,86 @@
+{
+  "script_version": "1.6",
+  "seed": 2026,
+  "smoke": false,
+  "models": {
+    "primary": "Qwen/Qwen3-1.7B",
+    "small": "Qwen/Qwen3-0.6B",
+    "teacher": "Qwen/Qwen3-4B"
+  },
+  "max_reason_tokens": 256,
+  "max_seq_len": 1024,
+  "epochs": 2,
+  "training_precision": "bf16",
+  "learning_rate": 0.0002,
+  "train_per_task": 2000,
+  "val_per_task": 100,
+  "test_per_task": 100,
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05
+  },
+  "gate_escalation_cost": 0.02,
+  "hf_hub_disable_xet": "1",
+  "hf_hub_download_timeout": "default",
+  "teacher_model_requested": "Qwen/Qwen3-4B",
+  "direct_per_task": 270,
+  "target_accepted_traces": 1500,
+  "max_trace_attempts": 3000,
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "teacher_model_used": "Qwen/Qwen3-1.7B",
+  "reference_split_digest": "7e2bf9de753f3ada42bcb2a52ccf55434beed3e01e8ab2dac7b51236648dc9a6",
+  "model": "Qwen/Qwen3-1.7B",
+  "hf_home": "/scratch/armaan.r.ug24/jev-efficiency-14610/hf",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "reference_dir": "/scratch/armaan.r.ug24/jev-frozen-routing-17248/output",
+  "target_mean_seconds": 1.0324353703889064,
+  "validation_examples": 400,
+  "test_examples": 500,
+  "adapter": {
+    "path": "/scratch/armaan.r.ug24/jev-lora-routing-17248/variants/lora_all/387cc25dc2b24b50df47fa3d3cec1464c29cb8eed2b52e193937e5cd7b33ade1/adapter",
+    "fingerprint": "387cc25dc2b24b50df47fa3d3cec1464c29cb8eed2b52e193937e5cd7b33ade1",
+    "training_config": {
+      "script_version": "1.6",
+      "seed": 2026,
+      "smoke": false,
+      "models": {
+        "primary": "Qwen/Qwen3-1.7B",
+        "small": "Qwen/Qwen3-0.6B",
+        "teacher": "Qwen/Qwen3-4B"
+      },
+      "max_reason_tokens": 256,
+      "max_seq_len": 1024,
+      "epochs": 2,
+      "training_precision": "bf16",
+      "learning_rate": 0.0002,
+      "train_per_task": 2000,
+      "val_per_task": 100,
+      "test_per_task": 100,
+      "lora": {
+        "rank": 16,
+        "alpha": 32,
+        "dropout": 0.05
+      },
+      "gate_escalation_cost": 0.02,
+      "hf_hub_disable_xet": "1",
+      "hf_hub_download_timeout": "default",
+      "teacher_model_requested": "Qwen/Qwen3-4B",
+      "direct_per_task": 270,
+      "target_accepted_traces": 1500,
+      "max_trace_attempts": 3000,
+      "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "teacher_model_used": "Qwen/Qwen3-1.7B",
+      "reference_split_digest": "7e2bf9de753f3ada42bcb2a52ccf55434beed3e01e8ab2dac7b51236648dc9a6"
+    },
+    "training_stats": {
+      "training_seconds": 646.4995826038066,
+      "trainable_parameters": 17432576,
+      "pruning": null,
+      "peak_training_gpu_bytes": 10250227712
+    },
+    "direct_examples": 1080,
+    "trace_attempts": 1926,
+    "accepted_traces": 1500
+  }
+}
